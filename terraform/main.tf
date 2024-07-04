@@ -1,3 +1,15 @@
+terraform {
+  cloud {
+    organization = "donis_cloud"
+
+    workspaces {
+      name = "my_first_workspace"
+    }
+  }
+}
+
+##############################################
+
 # Define the provider
 provider "aws" {
   region = "us-east-1"
